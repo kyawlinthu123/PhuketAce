@@ -56,7 +56,7 @@ export default function Rentals() {
             <RentalContent />
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 my-3 md:mx-24 transition-all duration-500">
                 {data.map((rental) => (
-                    <Card className="h-auto w-full rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105" key={rental.id}>
+                    <Card className="h-auto w-full rounded-lg shadow-lg bg-gray-100 transform transition-transform duration-300 hover:scale-105" key={rental.id}>
                         <CardHeader
                             floated={false}
                             shadow={false}
