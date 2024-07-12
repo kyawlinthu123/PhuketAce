@@ -8,11 +8,11 @@ import { Gallery } from "../pages/Gallery";
 
 const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: <Layout />,
       children: [
         {
-            path:' ',
+            path:'',
             element: <Home />
         },
         {

@@ -6,13 +6,13 @@ export default function NavBar() {
     <nav className='font-nunito'>
             <ul className='flex justify-around items-start p-3 mx-auto'>
                 <li className='flex items-center'>
-                    <Link to=' '>
+                    <Link to=''>
                         <p className='text-3xl font-bold text-primary'>Phuket<span className='text-red-500'>Ace</span></p>
                     </Link>
                 </li>
                 <li className='flex items-center space-x-3 text-sm md:text-base text-teal-900'>
                 <Link
-                    to=" "
+                    to=""
                     className='px-2 md:px-3 py-2 rounded-2xl items-center gap-1 transition-all duration-300 hidden md:block'
                 >
                 Home

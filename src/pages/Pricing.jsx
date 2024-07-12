@@ -44,10 +44,10 @@ export default function Pricing() {
     }
 
     return (
-        <div className="container mx-auto px-4 font-nunito">
+        <div className="container mx-auto px-4 font-nunito mt-2">
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white">
-                    <thead className="bg-gray-800 text-white">
+                    <thead className="bg-red-400 text-white">
                         <tr>
                             <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Car</th>
                             <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Name</th>
