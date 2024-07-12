@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Rentals from "../pages/Rentals";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
+import { Gallery } from "../pages/Gallery";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         {
             path:'/pricing',
             element: <Pricing />
+        },
+        {
+          path:'/gallery',
+          element: <Gallery />
         },
         {
             path:'/contact',

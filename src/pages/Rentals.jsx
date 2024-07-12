@@ -11,6 +11,7 @@ import {
     Button,
 } from "@material-tailwind/react";
 import RentalContent from "../components/RentalContent";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 // Custom hook for fetching rentals data
 const useRentals = () => {
@@ -43,7 +44,7 @@ export default function Rentals() {
     const { data, loading, error } = useRentals();
 
     if (loading) {
-        return <div className="container mx-auto px-4 py-8 font-nunito">Loading...</div>;
+        return <LoadingSpinner />
     }
 
     if (error) {
@@ -52,9 +53,7 @@ export default function Rentals() {
 
     return (
         <div className="container mx-auto px-4 font-nunito">
-            <div className="mb-4">
             <RentalContent />
-            </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 my-3 md:mx-24 transition-all duration-500">
                 {data.map((rental) => (
                     <Card className="h-auto w-full rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105" key={rental.id}>
