@@ -97,7 +97,7 @@ export default function Rentals() {
                             <Typography className="text-sm mb-1 ml-1 mr-1">
                                 <Button 
                                     color="red" 
-                                    className="text-white py-2 px-3 sm:px-4 sm:py-2 border rounded-full hover:bg-red-700 text-xs sm:text-sm md:text-base sm:mt-2"
+                                    className="text-white py-1 px-2 border rounded-full hover:bg-red-700 text-xs sm:text-sm md:text-base sm:mt-2"
                                     onClick={() => handleBookClick(rental)}
                                 >
                                 Book

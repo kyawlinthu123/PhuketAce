@@ -6,9 +6,9 @@ export default function TermsNConditions() {
     { title: "Age Limit", description: "The renter must be at least 21 years of age." },
     { title: "License", description: "The renter must possess a valid international or local license." },
     { title: "Usage", description: "Any damage to tyre(s) is the responsibility of the renter." },
-    { title: "Location", description: "The vehicle/motorcycle is for use strictly within Phuket Island. Riding on the beach is prohibited." },
-    { title: "Return Location", description: "The renter must return the vehicle/motorcycle to the place of hiring and at the agreed date and time. In case the renter leaves the vehicle at a different place, the renter agrees to be charged an amount as set by the company." },
-    { title: "Restriction", description: "The vehicle/motorcycle is not to be used for any illegal activities. In case of any illegal activities committed by the renter, it is the renter’s sole responsibility without any liability to the owner." },
+    { title: "Location", description: "The car/motorcycle is for use strictly within Phuket Island. Riding on the beach is prohibited." },
+    { title: "Return Location", description: "The renter must return the car/motorcycle to the place of hiring and at the agreed date and time. In case the renter leaves the vehicle at a different place, the renter agrees to be charged an amount as set by the company." },
+    { title: "Restriction", description: "The car/motorcycle is not to be used for any illegal activities. In case of any illegal activities committed by the renter, it is the renter’s sole responsibility without any liability to the owner." },
     { title: "Accident", description: "In case of an accident, the rented vehicle/motorcycle should not be moved unless directed by the police. No incriminating agreement shall be entered into, prior to consulting with a representative of the company and/or the insuring company." },
     { title: "Fuel", description: "The renter agrees to return the vehicle/motorcycle with the same fuel level as on the renting date. The renter agrees to be charged prevailing market rate for fuel in case the level of fuel is lower. Should the level of fuel be more, no refund shall be made to the renter." },
   ];

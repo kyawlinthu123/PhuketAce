@@ -15,9 +15,9 @@ export default function Services() {
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-100">
               <svg className="w-12 h-12 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
                 <polygon
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   fill="none"
                   points="29 13 14 29 25 29 23 39 38 23 27 23"
                 ></polygon>
@@ -37,9 +37,9 @@ export default function Services() {
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-100">
               <svg className="w-12 h-12 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
                 <polygon
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   fill="none"
                   points="29 13 14 29 25 29 23 39 38 23 27 23"
                 ></polygon>
@@ -59,9 +59,9 @@ export default function Services() {
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-100">
               <svg className="w-12 h-12 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
                 <polygon
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   fill="none"
                   points="29 13 14 29 25 29 23 39 38 23 27 23"
                 ></polygon>
@@ -81,9 +81,9 @@ export default function Services() {
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-gray-100">
               <svg className="w-12 h-12 text-red-500" stroke="currentColor" viewBox="0 0 52 52">
                 <polygon
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   fill="none"
                   points="29 13 14 29 25 29 23 39 38 23 27 23"
                 ></polygon>
