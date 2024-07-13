@@ -2,7 +2,9 @@ import React from 'react'
 import Header from '../components/Header'
 // import OpeningHours from '../components/OpeningHours'
 import Services from '../components/Services'
-import Footer from '../components/Footer'
+import TermsNConditions from '../components/TermsNConditions'
+import Footer from '../components/Footer';
+import Testimonials from '../components/Testimonials';
 
 
 export default function Home() {
@@ -11,7 +13,9 @@ export default function Home() {
     <Header/>
     {/* <OpeningHours /> */}
     <Services />
-    <Footer />
+    <TermsNConditions />
+    <Testimonials />
+    <Footer/>
     </>
   )
 }

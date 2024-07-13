@@ -10,6 +10,7 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
+import { useNavigate } from "react-router-dom";
 import RentalContent from "../components/RentalContent";
 import LoadingSpinner from "../components/LoadingSpinner";
 
@@ -42,6 +43,11 @@ const useRentals = () => {
 
 export default function Rentals() {
     const { data, loading, error } = useRentals();
+    const navigate = useNavigate();
+
+    const handleBookClick = (vehicle) => {
+        navigate('/booking', { state: { vehicle } });
+    };
 
     if (loading) {
         return <LoadingSpinner />
@@ -49,6 +55,14 @@ export default function Rentals() {
 
     if (error) {
         return <div className="container mx-auto px-4 py-8 font-nunito">Error: {error}</div>;
+    }
+
+    if (data.length === 0) {
+        return (
+            <div className="container mx-auto px-4 py-8 font-nunito">
+                <p className="text-gray-500 text-center">No rentals available at the moment. Please check back later.</p>
+            </div>
+        );
     }
 
     return (
@@ -81,7 +95,11 @@ export default function Rentals() {
                                 {rental.daily_price} THB/day
                             </div>
                             <Typography className="text-sm mb-1 ml-1 mr-1">
-                                <Button color="red" className="text-white py-2 px-3 sm:px-4 sm:py-2 border rounded-full hover:bg-red-700 text-xs sm:text-sm md:text-base sm:mt-2">
+                                <Button 
+                                    color="red" 
+                                    className="text-white py-2 px-3 sm:px-4 sm:py-2 border rounded-full hover:bg-red-700 text-xs sm:text-sm md:text-base sm:mt-2"
+                                    onClick={() => handleBookClick(rental)}
+                                >
                                 Book
                                 </Button>
                             </Typography>

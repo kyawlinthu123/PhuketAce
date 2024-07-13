@@ -1,12 +1,10 @@
 // src/components/Pricing.js
 import React, { useEffect, useState } from 'react';
-import { getFirestore, collection, getDocs } from "firebase/firestore";
-import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import LoadingSpinner from '../components/LoadingSpinner';
 
-// Custom hook for fetching rentals data
-const useRentals = () => {
+export default function Pricing() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -14,14 +12,14 @@ const useRentals = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const querySnapshot = await getDocs(collection(db, "rentals"));
+                const querySnapshot = await getDocs(collection(db, 'rentals'));
                 const rentals = [];
                 querySnapshot.forEach((doc) => {
                     rentals.push({ id: doc.id, ...doc.data() });
                 });
                 setData(rentals);
             } catch (err) {
-                setError(err.message);
+                setError('Failed to fetch rentals data. Please try again later.');
             } finally {
                 setLoading(false);
             }
@@ -29,18 +27,28 @@ const useRentals = () => {
         fetchData();
     }, []);
 
-    return { data, loading, error };
-};
-
-export default function Pricing() {
-    const { data, loading, error } = useRentals();
-
     if (loading) {
-        return <LoadingSpinner />;
+        return (
+            <div className="flex justify-center items-center h-screen">
+                <LoadingSpinner />
+            </div>
+        );
     }
 
     if (error) {
-        return <div className="container mx-auto px-4 py-8 font-nunito">Error: {error}</div>;
+        return (
+            <div className="container mx-auto px-4 py-8 font-nunito">
+                <p className="text-red-500 text-center">{error}</p>
+            </div>
+        );
+    }
+
+    if (data.length === 0) {
+        return (
+            <div className="container mx-auto px-4 py-8 font-nunito">
+                <p className="text-gray-500 text-center">No pricing available at the moment. Please check back later.</p>
+            </div>
+        );
     }
 
     return (

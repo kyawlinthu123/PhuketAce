@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -53,9 +54,9 @@ export default function Contact() {
   };
 
   return (
-    <section className="bg-white">
+    <section className="bg-white font-nunito">
       <div className="py-2 lg:py-4 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
+        <h2 className="mb-4 text-4xl font-bold text-center">Contact Us</h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
         Have questions about our rental policies? Need assistance with your booking or have a special request? We're here to help. Reach out to us with any inquiries or feedback.
         </p>
@@ -101,7 +102,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-500 sm:w-fit hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-red-500 text-white transform transition-transform duration-300 hover:scale-105 hover:bg-red-600"
           >
             Send message
           </button>

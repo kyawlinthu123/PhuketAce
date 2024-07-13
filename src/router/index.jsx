@@ -5,6 +5,7 @@ import Rentals from "../pages/Rentals";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
 import { Gallery } from "../pages/Gallery";
+import BookingForm from "../components/BookingForm";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         {
             path:'/contact',
             element: <Contact />
+        },
+        {
+          path:'/booking',
+          element: <BookingForm />
         }
       ]
     },

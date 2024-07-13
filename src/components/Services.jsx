@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Services() {
   return (
-    <div className="h-screen px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="h-screen font-nunito px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <h2 className="max-w-lg mb-6 font-sans text-6xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-          Our Services
+        <h2 className="max-w-lg font-sans text-3xl font-bold leading-none tracking-tight md:mx-auto mb-2">
+          Services
         </h2>
       </div>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
@@ -26,7 +26,7 @@ export default function Services() {
           </div>
           <div className="text-center">
             <h6 className="mb-2 font-bold leading-5">Unlimited Mileage</h6>
-            <p className="mb-3 text-sm text-gray-900">
+            <p className="mb-3 text-sm">
               Enjoy the freedom of unlimited mileage on all bookings, ensuring you can explore without limits.
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Services() {
           </div>
           <div className="text-center">
             <h6 className="mb-2 font-bold leading-5">Free Cancellation on Non-Confirmed Booking</h6>
-            <p className="mb-3 text-sm text-gray-900">
+            <p className="mb-3 text-sm">
               Benefit from hassle-free cancellations for non-confirmed bookings, providing peace of mind and flexibility.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Services() {
           </div>
           <div className="text-center">
             <h6 className="mb-2 font-bold leading-5">Best Price Guaranteed</h6>
-            <p className="mb-3 text-sm text-gray-900">
+            <p className="mb-3 text-sm">
               Rest assured knowing you're getting the best deal with our price guarantee, ensuring competitive rates for your bookings.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function Services() {
           </div>
           <div className="text-center">
             <h6 className="mb-2 font-bold leading-5">Customer Information Support</h6>
-            <p className="mb-3 text-sm text-gray-900">
+            <p className="mb-3 text-sm">
               Our dedicated customer support team is available around the clock to assist with any inquiries or issues you may have.
             </p>
           </div>
