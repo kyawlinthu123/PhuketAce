@@ -49,7 +49,7 @@ export default function Pricing() {
                 <table className="min-w-full bg-white">
                     <thead className="bg-red-400 text-white">
                         <tr>
-                            <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Car</th>
+                            <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Rental</th>
                             <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Name</th>
                             <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Price per Day</th>
                             <th className="w-1/6 py-3 px-4 uppercase font-semibold text-sm text-left lg:px-6">Price per Week</th>
